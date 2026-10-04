@@ -17,9 +17,10 @@ function upgradeCrew(pirates) {
 function printBountyLeaderboard(crewList) {
   const sortedCrew = [...crewList];
   sortedCrew.sort((a, b) => b.bounty - a.bounty);
-  let badge;
 
   for (let i = 0; i < sortedCrew.length; i++) {
+    let badge;
+
     if (i === 0) {
       badge = "🥇";
     } else if (i === 1) {
